@@ -1,0 +1,87 @@
+.publication {
+    padding: 25px;
+    border-radius: 15px;
+    background-color: rgb(240, 240, 240);
+    transition: all .3s ease-in-out;
+    justify-content: left;
+    text-align: left;
+    min-width: calc(100% - 50px);
+}
+
+[data-dark-mode] .publication {
+    background: $gray-700;
+}
+
+.publication > * {
+    cursor: default;
+}
+
+.publication > .title {
+    font-size: 25px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.publication > .conference > .conference-name {
+    font-weight: bold;
+}
+
+.pub-button {
+    border-radius: 15px;
+    border: 2px solid #1565c0;
+    padding: 15px;
+    text-decoration: none;
+    max-width: 150px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-right: 10px;
+    text-transform: none;
+    font-weight: bold;
+    color: #1565c0;
+}
+
+[data-dark-mode] .pub-button {
+    border: 2px solid rgb(121, 121, 121);
+}
+
+.pub-button:link { 
+    text-decoration: none; 
+    color: white;
+}
+
+
+.pub-button:visited { 
+    text-decoration: none; 
+    color: #1565c0;
+}
+
+[data-dark-mode] .pub-button:visited {
+    color: color(srgb 0.557 0.8388 0.9837);
+}
+
+
+.pub-button:hover { 
+    background: #1565c0;
+    transition: all .2s ease-in-out;
+    color: white;
+}
+
+[data-dark-mode] .pub-button:hover {
+    color: white;
+    background:rgb(121, 121, 121);
+}
+
+.pub-button::selection {
+    text-decoration: none;
+    color: white;
+}
+
+
+.pub-button:active { 
+    text-decoration: none; 
+    color: white;
+}
+
+.pub-button:hover {
+    
+}
