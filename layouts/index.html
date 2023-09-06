@@ -25,6 +25,19 @@
       <div class="row justify-content-center text-center">
         <h2>📚 Publications</h2>
         <div class="col-lg-5 publication">
+          <div class="title">👉 A New Model for Testing IPv6 Fragment Handling</div>
+          <div class="authors">Authors: Di Paolo Edoardo, Bassetti Enrico, Spognardi Angelo.</div>
+          <div class="conference">In: <span class="conference-name">ESORICS 2023.</span></div>
+          <div class="abstract"><b>Abstract</b>: Since the origins of the Internet, various vulnerabilities exploiting the IP fragmentation process have plagued IPv4 protocol, many leading to a wide range of attacks. IPv6 modified the handling of fragmentations and introduced a specific extension header, not solving the related problems, as proved by extensive literature. One of the primary sources of problems has been the overlapping fragments, which result in unexpected or malicious packets when reassembled. To overcome the problem related to fragmentation, the authors of RFC 5722 decided that IPv6 hosts MUST silently drop overlapping fragments.
+          Since then, several studies have proposed methodologies to check if IPv6 hosts accept overlapping fragments and are still vulnerable to related attacks. However, some of the above methodologies have not been proven complete or need to be more accurate.
+          In this paper we propose a novel model to check IPv6 fragmentation handling specifically suited for the reassembling strategies of modern operating systems. Previous models, indeed, considered OS reassembly policy as byte-based. However, nowadays, reassembly policies are fragment-based, making previous models inadequate. Our model leverages the commutative property of the checksum, simplifying the whole assessing process.
+          Starting with this new model, we were able to better evaluate the RFC-5722 and RFC-9099 compliance of modern operating systems against fragmentation handling. Our results suggest that IPv6 fragmentation can still be considered a threat and that more effort is needed to solve related security issues.</div>
+          <div class="mt-4 d-flex flex-row-reverse">
+            <a target="_blank" href="" class="pub-button">N/A</a>
+            <!--<a class="pub-button">BibTex</a>-->
+            <a target="_blank" href="https://github.com/netsecuritylab/ipv6-fragmentation" class="pub-button">GitHub</a>
+          </div>
+        <div class="col-lg-5 publication">
           <div class="title">👉 Security Assessment of Open Source MQTT Brokers and Clients</div>
           <div class="authors">Authors: Di Paolo Edoardo, Bassetti Enrico, Spognardi Angelo.</div>
           <div class="conference">In: <span class="conference-name">Proceedings of the Italian Conference on Cybersecurity (ITASEC 2021).</span></div>
