@@ -4,7 +4,7 @@ title: "Network Security Lab website"
 slug: new-website
 short_description: "We are excited to announce the launch of our new website!"
 
-date: '2024-09-05'
+date: '2024-09-06'
 ---
 
 #### Welcome to our new website!
