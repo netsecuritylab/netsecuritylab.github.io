@@ -3,18 +3,33 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
   <body>
     {% include header.html %}
     <main class="container" style="padding-top: 60px;">
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-lg-8">
           {{content}}
         </div>
-        <div class="col-sm-4">
-          PLACEHOLDER
+        <div class="col-lg-4">
+          <div class="p-3 news-section bg-light">
+            <h4>Latest news</h4>
+            {% assign news = site.news | sort: 'date' | reverse %}
+            {% for article in news limit:10 %}
+            {% assign middle_part = article.path | split: '/'%}
+            <div class="article pt-2 pb-2">
+              <div>
+                <a class="news-link-home mb-0" href="{{site.url}}/news/{{article.slug}}">{{article.title}}</a>
+                <div class="mt-0 news-date-home text-body-secondary">
+                  {{article.date | date: "%-d %B %Y"}}
+                  <span>{{article.content | reading_time}}</span>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </main>

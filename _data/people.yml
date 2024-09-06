@@ -37,3 +37,8 @@
       value: "https://linkedin.com/in/ed0ardo"
       show: true
       description: "Linkedin Profile"
+    github:
+      icon: "bi bi-github"
+      value: "https://github.com/aedoardo"
+      show: true
+      description: "GitHub profile"

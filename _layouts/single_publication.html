@@ -8,6 +8,7 @@
   </head>
   <body>
     {% include header.html %}
+    {% assign middle_part = page.url | split: '/'%}
     <main class="container" style="padding-top: 60px;">
       <div class="row">
         <div class="d-flex flex-column align-items-center align-content-center justify-content-center col-lg-12">
@@ -21,7 +22,7 @@
                     {% endfor %}
                 </div>
                 <div class="publication-options mt-2 mb-3">
-                    <span class="publication-option"><a href="/publications/{{middle_part[1]}}/cite.bib" target="_blank" class="option-link"><i class="bi bi-quote"></i> Cite</a></span>
+                    <span class="publication-option"><a href="{{site.url}}/{{middle_part[1]}}/{{middle_part[2]}}/cite.bib" target="_blank" class="option-link"><i class="bi bi-quote"></i> Cite</a></span>
                     {% for link in page.links %}
                     <span class="publication-option"><a href="{{link.url}}" target="_blank" class="option-link"><i class="{{link.icon}}"></i> {{link.value}}</a></span>
                     {% endfor %}

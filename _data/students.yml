@@ -1,0 +1,107 @@
+- name: Luciano Valletta
+  thesis: ""
+  current: true
+
+- name: Andrea Di Paolo
+  thesis: ""
+  current: true
+
+- name: Antonio Cordeiro
+  thesis: ""
+  current: true
+
+- name: Andrea Di Paolo
+  thesis: ""
+  current: true
+
+- name: Anastasiia Baranovska
+  thesis: ""
+  current: true
+
+- name: Fabio Figara
+  thesis: ""
+  current: true
+
+- name: Paolo Luciano
+  thesis: ""
+  current: true
+
+- name: Giovanni Pimpinella
+  thesis: ""
+  current: true
+
+- name: Federica Bianchi
+  thesis: ""
+  current: true
+
+- name: Nicolò Fragale
+  thesis: ""
+  current: true
+
+- name: Riccardo Mancini
+  thesis: ""
+  current: true
+
+- name: Annafabia Gai
+  thesis: ""
+  current: true
+
+- name: Gianluca Monte
+  thesis: ""
+  current: true
+
+- name: Fabrizio Chiaretti
+  thesis: ""
+  current: true
+
+- name: Matteo Alleva
+  thesis: "Realizzazione di una Infrastruttura con Tecnologia Check Point per l'Analisi dei Covert Channel IPv6"
+  current: false
+
+- name: Leonardo Scappatura
+  thesis: "Deep Learning Model for Encrypted Network Traffic Analysis"
+  current: false
+
+- name: Davide Di Campi
+  thesis: ""
+  current: false
+
+- name: Daniele Ferracci
+  thesis: ""
+  current: false
+
+- name: Radek Di Luca
+  thesis: ""
+  current: false
+
+- name: Vincenzo Casanova
+  thesis: ""
+  current: false
+
+- name: Andrea Ercolino
+  thesis: "Implementing and Evaluating IPv6 Covert Channels"
+  current: false
+
+- name: Alessandro Formiconi
+  thesis: "Security vulnerabilities and non-compliance study on MQTT brokers and clients implementations"
+  current: false
+
+- name: Paolo Gigliesi
+  thesis: ""
+  current: false
+
+- name: Francesco Inglese
+  thesis: ""
+  current: false
+
+- name: Leonardo Persiani
+  thesis: "Design and implementation of a monitoring tool for cyber-range exercises"
+  current: false
+
+- name: Mario Cavaiola
+  thesis: ""
+  current: false
+
+- name: Giuseppe Rinaldi
+  thesis: ""
+  current: false

@@ -11956,4 +11956,47 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+.news-span-date::after {
+  margin-left: 10px;
+  content: "·";
+  margin-right: 10px;
+}
+
+.news-section {
+  border-radius: 3px;
+  border: 1px solid rgb(170, 170, 170);
+  border-top: 2px solid rgb(170, 170, 170);
+}
+
+.article {
+  border-top: 1px solid rgb(160, 160, 160);
+}
+
+.news-section > .article:last-of-type {
+  border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+.news-date-home > span::before {
+  content: "·";
+  margin-right: 3px;
+}
+
+.news-link-home {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.news-link-home:hover {
+  color: #3db75d;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.student-item {
+  border-bottom: 1px dotted rgb(160, 160, 160);
+  margin-bottom: 5px;
+}
+
 /*# sourceMappingURL=main.css.map */
