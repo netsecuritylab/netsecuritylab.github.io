@@ -10,4 +10,6 @@ The **Network Security Lab** is a research group at the **Department of Computer
 
 Our research focuses on **anomaly detection in social networks**, using both **AI-based** and traditional models, as well as the **security of IPv6 networks**. We also study innovative methods for **password generation** through Large Language Models (**LLMs**), classification of **encrypted internet traffic**, and the security challenges related to the Internet of Things (**IoT**).
 
+The memebers of our group come from a diverse range of backgrounds, including cybersecurity, computer science, and computer engineering. This interdisciplinary approach enriches our research, allowing us to tackle complex problems from multiple perspectives.
+
 At the Network Security Lab, our mission is to push boundaries of knowledge in network security and contribute to the undestaing and development of secure internet.

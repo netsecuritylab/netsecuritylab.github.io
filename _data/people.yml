@@ -20,7 +20,7 @@
   role: "PhD Student"
   rank: 2
   image: "./assets/images/edoardo_di_paolo_2024.jpg"
-  interests: "Social Network Anomaly Detection, IPv6 Security"
+  interests: "Social Network Anomaly Detection, Network Security"
   contacts:
     email:
       icon: "bi bi-envelope"
@@ -41,4 +41,31 @@
       icon: "bi bi-github"
       value: "https://github.com/aedoardo"
       show: true
+      description: "GitHub profile"
+
+- name: "Federica Bianchi"
+  role: "PhD Student"
+  rank: 2
+  image: "./assets/images/federica_bianchi_2024.jpg"
+  interests: "Network Traffic Analysis, Evasive Malware Analysis"
+  contacts:
+    email:
+      icon: "bi bi-envelope"
+      value: "mailto:bianchi.1891952@studenti.uniroma1.it"
+      show: true
+      description: "Email"
+    scholar:
+      icon: "bi bi-journal"
+      value: "https://scholar.google.com/citations?user=K-00jlEAAAAJ"
+      show: false
+      description: "Google Scholar"
+    linkedin:
+      icon: "bi bi-linkedin"
+      value: "https://www.linkedin.com/in/federica-bianchi-50a013294/"
+      show: true
+      description: "Linkedin Profile"
+    github:
+      icon: "bi bi-github"
+      value: "https://github.com/aedoardo"
+      show: false
       description: "GitHub profile"
