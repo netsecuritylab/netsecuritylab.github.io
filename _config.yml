@@ -1,0 +1,10 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Network Security Lab" # the name of your site, e.g. ACME Corp.
+sass:
+    load_paths: 
+        - _sass
+collections:
+  publications:
+    output: true
+    #permalink: "/:collection/:slug/"

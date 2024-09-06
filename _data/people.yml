@@ -1,0 +1,39 @@
+- name: "Angelo Spognardi"
+  role: "Associate Professor"
+  rank: 3
+  image: "./assets/images/angelo_spognardi_2024.jpeg"
+  interests: "Network Anomaly Detection, Social Network Anomaly Detection, IoT and WSN Security"
+  contacts:
+    email:
+      icon: "bi bi-envelope"
+      value: "mailto:spognardi@di.uniroma1.it"
+      show: true
+      description: "Email"
+    scholar:
+      icon: "bi bi-journal"
+      value: "https://scholar.google.com/citations?user=ULcRFLoAAAAJ"
+      show: true
+      description: "Google Scholar"
+    
+
+- name: "Edoardo Di Paolo"
+  role: "PhD Student"
+  rank: 2
+  image: "./assets/images/edoardo_di_paolo_2024.jpg"
+  interests: "Social Network Anomaly Detection, IPv6 Security"
+  contacts:
+    email:
+      icon: "bi bi-envelope"
+      value: "mailto:dipaolo@di.uniroma1.it"
+      show: true
+      description: "Email"
+    scholar:
+      icon: "bi bi-journal"
+      value: "https://scholar.google.com/citations?user=K-00jlEAAAAJ"
+      show: true
+      description: "Google Scholar"
+    linkedin:
+      icon: "bi bi-linkedin"
+      value: "https://linkedin.com/in/ed0ardo"
+      show: true
+      description: "Linkedin Profile"

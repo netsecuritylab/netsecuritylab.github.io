@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  </head>
+  <body>
+    {% include header.html %}
+    <main class="container" style="padding-top: 60px;">
+      <div class="d-flex justify-content-center row">
+        <h1 class="text-center">Publications</h1>
+        <div class="col-md-8 ms-5">
+            {% assign publications = site.publications | sort: 'date' | reverse %}
+            {% for publication in publications %}
+            
+            {% assign middle_part = publication.path | split: '/'%}
+            <div class="publication mb-5">
+                <span class="col-sm-10 publication-title">
+                    <a href="{{site.url}}/publications/{{middle_part[1]}}">{{publication.title}}</a>
+                </span>
+                <div onclick="window.location.href= '{{site.url}}/publications/{{middle_part[1]}}'" class="col-lg-12 publication-abstract-list">
+                    {{publication.abstract}}    
+                </div>
+                <div class="publication-conference mt-1 text-body-secondary">
+                    {{publication.publication}}
+                </div>
+                <div class="publication-authors mt-1">
+                    {% for author in publication.authors %}
+                    <span>
+                        <a class="author-link text-body-secondary">{{author}}</a>{% if forloop.last == true %}.{% else %},{% endif %}
+                    </span>
+                    {% endfor %}
+                </div>
+                <div class="publication-options mt-2">
+                    <span class="publication-option"><a href="/publications/{{middle_part[1]}}/cite.bib" target="_blank" class="option-link"><i class="bi bi-quote"></i> Cite</a></span>
+                    {% for link in publication.links %}
+                    <span class="publication-option"><a href="{{link.url}}" target="_blank" class="option-link"><i class="{{link.icon}}"></i> {{link.value}}</a></span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+      </div>
+    </main>
+    {% include footer.html %}
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
