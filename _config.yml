@@ -11,3 +11,6 @@ collections:
   news:
     output: true
     permalink: "/:collection/:slug"
+  authors:
+    output: true
+    permalink: "/:collection/:slug"

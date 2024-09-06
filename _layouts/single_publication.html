@@ -1,43 +1,73 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ site.title }} ~ {{ page.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  </head>
-  <body>
-    {% include header.html %}
-    {% assign middle_part = page.url | split: '/'%}
-    <main class="container" style="padding-top: 60px;">
-      <div class="row">
-        <div class="d-flex flex-column align-items-center align-content-center justify-content-center col-lg-12">
-            <h3 class="col-lg-6">{{page.title}}</h3>
-            <div class="col-lg-6">
-                <div class="publication-authors mt-1">
-                    {% for author in page.authors %}
-                    <span>
-                        <a class="author-link text-body-secondary">{{author}}</a>{% if forloop.last == true %}.{% else %},{% endif %}
-                    </span>
-                    {% endfor %}
-                </div>
-                <div class="publication-options mt-2 mb-3">
-                    <span class="publication-option"><a href="{{site.url}}/{{middle_part[1]}}/{{middle_part[2]}}/cite.bib" target="_blank" class="option-link"><i class="bi bi-quote"></i> Cite</a></span>
-                    {% for link in page.links %}
-                    <span class="publication-option"><a href="{{link.url}}" target="_blank" class="option-link"><i class="{{link.icon}}"></i> {{link.value}}</a></span>
-                    {% endfor %}
-                </div>
-                <h5>Abstract</h5>
-                <p>{{page.abstract}}</p>
-                <div class="d-flex">
-                  <h5>Publication: </h5>
-                  <span class="publication-type ms-1 text-body-secondary">{{page.publication}}</span>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>{{ site.title }} ~ {{ page.title }}</title>
+        <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    </head>
+    <body> {% include header.html %} {% assign middle_part = page.url | split: '/'%} <main class="container" style="padding-top: 60px;">
+            <div class="row">
+                <div class="d-flex flex-column align-items-center align-content-center justify-content-center col-lg-12">
+                    <h3 class="col-lg-6">{{page.title}}</h3>
+                    <div class="col-lg-6">
+                        <div class="publication-authors mt-1"> 
+                        {% for author in page.authors %} 
+                        {% assign tmp_author = author | replace: ' ', '-' | downcase %}
+                        <span>
+                            <a href="{{site.url}}/authors/{{tmp_author}}" class="author-link text-body-secondary">{{author}}</a>{% if forloop.last == true %}.{% else %},{% endif %}
+                         </span> 
+                         {% endfor %} 
+                        </div>
+                        <div class="publication-options mt-2 mb-3">
+                            <span class="publication-option">
+                                <a href="{{site.url}}/{{middle_part[1]}}/{{middle_part[2]}}/cite.bib" target="_blank" class="option-link">
+                                    <i class="bi bi-quote"></i> Cite </a>
+                            </span> 
+							{% for link in page.links %} 
+							<span class="publication-option ms-1">
+                                <a href="{{link.url}}" target="_blank" class="option-link">
+                                    <i class="{{link.icon}}"></i> {{link.value}}
+                                </a>
+                            </span> 
+							{% endfor %}
+                        </div>
+                        <h5>Abstract</h5>
+                        <p>{{page.abstract}}</p>
+                        <div class="d-flex mt-4">
+                            <h5>Publication: </h5>
+                            <span class="publication-type ms-1 text-body-secondary">{{page.publication}}</span>
+                        </div>
+						<div class="d-flex mt-1">
+                            <h5>Year: </h5>
+                            <span class="publication-type ms-1 text-body-secondary">{{page.date | date: "%Y"}}</span>
+                        </div>
+                        <div class="d-flex flex-column mt-3">
+							{% for author in page.authors %}
+								{% assign tmp_author = author | replace: ' ', '-' | downcase %}
+								{% if site.data.people[tmp_author].name.size > 0 %}
+								<div class="d-flex publication-author">
+									<div class="mt-2 mb-2">
+										<img width="75" height="75" src="{{site.url}}/{{site.data.people[tmp_author].image}}" class="publication-author-image" /> 
+									</div>
+									<div class="d-flex pt-3 ps-2 flex-column">
+										<h5 onclick="window.location.href = '{{site.url}}/authors/{{tmp_author}}'" class="mb-0 people-name">{{site.data.people[tmp_author].name}}</h5>
+										<span class="text-body-secondary mt-0">{{site.data.people[tmp_author].role}}</span>
+										<ul class="list-inline mb-1 p-0">
+											{% for item in site.data.people[tmp_author].contacts%}
+											{% if item[1].show %}
+											<li title="{{item[1].description}}" class="list-inline-item m-0 p-0 contact"><a target="_blank" href="{{item[1].value}}" class="text-decoration-none d-block"><i class="{{item[1].icon}}"></i></a></li>
+											{% endif %}
+											{% endfor %}
+										</ul>
+									</div>
+								</div>
+								{% endif %}
+							{% endfor %}
+						</div>
+                    </div>
                 </div>
             </div>
-        </div>
-      </div>
-    </main>
-    {% include footer.html %}
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        </main> {% include footer.html %} </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

@@ -12006,4 +12006,30 @@ body {
   line-height: 1.2;
 }
 
+.publication-author-image {
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+}
+
+.publication-author {
+  border-top: 1px solid rgb(240, 240, 240);
+  margin-bottom: 15px;
+}
+
+.contact:hover {
+  transform: scale(1.2);
+}
+
+.people-name {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.people-name:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #3db75d;
+}
+
 /*# sourceMappingURL=main.css.map */

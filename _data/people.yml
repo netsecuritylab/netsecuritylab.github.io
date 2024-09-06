@@ -1,7 +1,8 @@
-- name: "Angelo Spognardi"
+angelo-spognardi:
+  name: "Angelo Spognardi"
   role: "Associate Professor"
   rank: 3
-  image: "./assets/images/angelo_spognardi_2024.jpeg"
+  image: "assets/images/angelo_spognardi_2024.jpeg"
   interests: "Network Anomaly Detection, Social Network Anomaly Detection, IoT and WSN Security"
   contacts:
     email:
@@ -16,10 +17,11 @@
       description: "Google Scholar"
     
 
-- name: "Edoardo Di Paolo"
+edoardo-di-paolo:
+  name: "Edoardo Di Paolo"
   role: "PhD Student"
   rank: 2
-  image: "./assets/images/edoardo_di_paolo_2024.jpg"
+  image: "assets/images/edoardo_di_paolo_2024.jpg"
   interests: "Social Network Anomaly Detection, Network Security"
   contacts:
     email:
@@ -43,10 +45,11 @@
       show: true
       description: "GitHub profile"
 
-- name: "Federica Bianchi"
+federica-bianchi:
+  name: "Federica Bianchi"
   role: "PhD Student"
   rank: 2
-  image: "./assets/images/federica_bianchi_2024.jpg"
+  image: "assets/images/federica_bianchi_2024.jpg"
   interests: "Network Traffic Analysis, Evasive Malware Analysis"
   contacts:
     email:

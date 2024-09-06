@@ -28,8 +28,9 @@
                 </div>
                 <div class="publication-authors mt-1">
                     {% for author in publication.authors %}
+                    {% assign tmp_author = author | replace: ' ', '-' | downcase %}
                     <span>
-                        <a class="author-link text-body-secondary">{{author}}</a>{% if forloop.last == true %}.{% else %},{% endif %}
+                        <a href="{{site.url}}/authors/{{tmp_author}}" class="author-link text-body-secondary">{{author}}</a>{% if forloop.last == true %}.{% else %},{% endif %}
                     </span>
                     {% endfor %}
                 </div>
