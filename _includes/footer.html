@@ -17,8 +17,13 @@
   window.addEventListener('DOMContentLoaded', (event) => {
     new PagefindUI({ 
       element: "#search",
-      baseUrl: "/",
-      showImages: false
+      showImages: false,
+      processResult: function (result) {
+        if (result.url.includes("_site")) {
+          result.url = result.url.replace('_site/', './')
+        }
+        return result;
+      }
     });
   });
 </script>
