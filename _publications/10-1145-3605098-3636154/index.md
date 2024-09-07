@@ -22,9 +22,7 @@ publishDate: '2024-09-06T07:33:03.642148Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
-publication_types:
-- paper-conference
-
+publication_types: 'paper_conference'
 # Publication name and optional abbreviated publication name.
 publication: 'Proceedings of the 39th ACM/SIGAPP Symposium on Applied Computing'
 publication_short: ''

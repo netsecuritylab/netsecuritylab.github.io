@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <title>{{ site.title }} ~ {{ page.title }}</title>
-        <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-    </head>
-    <body> {% include header.html %} {% assign middle_part = page.url | split: '/'%} <main class="container" style="padding-top: 60px;">
+    {% include head.html %}
+    <body> 
+        {% include header.html %} {% assign middle_part = page.url | split: '/'%} 
+        <main class="container" style="padding-top: 60px;">
             <div class="row">
                 <div class="d-flex flex-column align-items-center align-content-center justify-content-center col-lg-12">
                     <h3 class="col-lg-6">{{page.title}}</h3>
@@ -68,6 +65,7 @@
                     </div>
                 </div>
             </div>
-        </main> {% include footer.html %} </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        </main> 
+        {% include footer.html %} 
+    </body>
 </html>

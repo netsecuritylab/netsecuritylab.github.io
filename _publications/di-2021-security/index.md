@@ -23,8 +23,7 @@ publishDate: '2024-09-06T07:33:03.617695Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
-publication_types:
-- article-journal
+publication_types: 'paper_conference'
 
 # Publication name and optional abbreviated publication name.
 publication: 'ITASEC 2021'

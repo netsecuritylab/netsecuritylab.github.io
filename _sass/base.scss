@@ -192,3 +192,14 @@ body {
   transition: all .3s ease-in-out;
   color: #3db75d;
 }
+
+.search-icon {
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  font-size: 22px;
+}
+
+.search-icon:hover {
+  transform: scale(1.2);
+  transition: all .3s ease-in-out;
+}

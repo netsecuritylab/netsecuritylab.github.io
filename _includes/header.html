@@ -22,6 +22,21 @@
             <a class="nav-link {% if page.url == '/students.html' %} active {% endif %}" href="/students">Students</a>
           </li>
         </ul>
+        <form class="d-flex" role="search">
+          <i data-bs-toggle="modal" href="#searchModal" class="search-icon bi bi-search mr-2" type="search"></i>
+        </form>
+      </div>
+      <div class="modal fade" id="searchModal" aria-hidden="true" aria-labelledby="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="search-input-modal" id="search"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </nav>

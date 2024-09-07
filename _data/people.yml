@@ -72,3 +72,31 @@ federica-bianchi:
       value: "https://github.com/aedoardo"
       show: false
       description: "GitHub profile"
+
+giovanni-pimpinella:
+  name: "Giovanni Pimpinella"
+  role: "PhD Student"
+  rank: 2
+  image: "assets/images/default_avatar_male.svg"
+  interests: "Network Traffic Analysis, Evasive Malware Analysis"
+  contacts:
+    email:
+      icon: "bi bi-envelope"
+      value: "mailto:bianchi.1891952@studenti.uniroma1.it"
+      show: false
+      description: "Email"
+    scholar:
+      icon: "bi bi-journal"
+      value: "https://scholar.google.com/citations?user=K-00jlEAAAAJ"
+      show: false
+      description: "Google Scholar"
+    linkedin:
+      icon: "bi bi-linkedin"
+      value: "https://www.linkedin.com/in/federica-bianchi-50a013294/"
+      show: false
+      description: "Linkedin Profile"
+    github:
+      icon: "bi bi-github"
+      value: "https://github.com/aedoardo"
+      show: false
+      description: "GitHub profile"

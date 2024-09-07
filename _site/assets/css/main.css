@@ -12032,4 +12032,15 @@ body {
   color: #3db75d;
 }
 
+.search-icon {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 22px;
+}
+
+.search-icon:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
 /*# sourceMappingURL=main.css.map */

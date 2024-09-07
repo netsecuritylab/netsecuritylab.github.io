@@ -22,8 +22,7 @@ publishDate: '2024-09-06T07:33:03.627004Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
-publication_types:
-- paper-conference
+publication_types: 'paper_conference'
 
 # Publication name and optional abbreviated publication name.
 publication: 'Computational Science - ICCS 2023'

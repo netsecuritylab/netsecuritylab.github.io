@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ page.title }} - Publications</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  </head>
+  {% include head.html %}
   <body>
     {% include header.html %}
     <main class="container" style="padding-top: 60px;">
       <div class="d-flex justify-content-center row">
         <h1 class="text-center">Publications</h1>
-        <div class="col-md-8 ms-5">
+        <div class="col-md-8 ms-0">
+          <form class="d-flex form-inline mb-4">
+            <div class="form-group mr-2">
+              <input class="form-control filter-text" id="textSearch" type="text" placeholder="Search...">
+            </div>
+            <div class="form-group ms-2">
+              <select class="form-select filter-type">
+                <option value="*" default>Type</option>
+                <option value="paper_conference">Conference Paper</option>
+                <option value="paper_journal">Journal Paper</option>
+                <option value="paper_preprint">Preprint</option>
+              </select>
+            </div>
+            <div class="form-group ms-2">
+              <select class="form-select filter-year">
+                <option value="*" default>Year</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="publications col-md-8 ms-0">
             {% assign publications = site.publications | sort: 'date' | reverse %}
             {% for publication in publications %}
             
             {% assign middle_part = publication.path | split: '/'%}
-            <div class="publication mb-5">
+            <div class="publication mb-5" data-filter-type="{{publication.publication_types}}" data-filter-year="{{publication.date | date: "%Y"}}">
                 <span class="col-sm-10 publication-title">
                     <a href="{{site.url}}/publications/{{middle_part[1]}}">{{publication.title}}</a>
                 </span>
@@ -29,7 +44,7 @@
                 <div class="publication-authors mt-1">
                     {% for author in publication.authors %}
                     {% assign tmp_author = author | replace: ' ', '-' | downcase %}
-                    <span>
+                    <span data-pagefind-filter="{{author}}">
                         <a href="{{site.url}}/authors/{{tmp_author}}" class="author-link text-body-secondary">{{author}}</a>{% if forloop.last == true %}.{% else %},{% endif %}
                     </span>
                     {% endfor %}
@@ -46,6 +61,63 @@
       </div>
     </main>
     {% include footer.html %}
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+      var years = new Set(); // Usa un Set per ottenere valori unici
+
+      $('.publication').each(function() {
+          var year = $(this).attr('data-filter-year');
+          years.add(year); // Aggiungi l'anno al Set
+      });
+
+      // Ordina gli anni in ordine decrescente
+      var sortedYears = Array.from(years).sort(function(a, b) {
+          return b - a; // Ordine decrescente
+      });
+
+      // Popola il select year con le opzioni
+      var $yearSelect = $('.filter-year');
+      sortedYears.forEach(function(year) {
+          $yearSelect.append('<option value="' + year + '">' + year + '</option>');
+      });
+
+
+      let $pubs = $('.publications').isotope({
+        itemSelector: '.publication',
+        layoutMode: 'fitRows'
+      });
+
+      function filterPublications() {
+        let year = $('.filter-year').val();
+        let type = $('.filter-type').val();
+        let text = $('.filter-text').val().toLowerCase();
+
+
+        console.log(year, type)
+        
+        var yearFilter = year === '*' ? '*' : '[data-filter-year="' + year + '"]';
+        var typeFilter = type === '*' ? '*' : '[data-filter-type="' + type + '"]';
+        var combinedFilter = yearFilter + typeFilter;
+
+        $pubs.isotope({
+          filter: function() {
+            let $this = $(this);
+            let matchesYearAndType = $this.is(combinedFilter);
+            let matchesText = $this.text().toLowerCase().includes(text);
+
+            return matchesYearAndType & matchesText;
+          }
+        })
+
+      }
+
+      $('.filter-year, .filter-type, .filter-text').on('change keyup', function() {
+        filterPublications();
+      })
+    </script>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
