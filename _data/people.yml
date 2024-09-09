@@ -111,7 +111,7 @@ edoardo-allegrini:
     email:
       icon: "bi bi-envelope"
       value: "mailto:allegrini@di.uniroma1.it"
-      show: false
+      show: true
       description: "Email"
     scholar:
       icon: "bi bi-journal"
@@ -121,10 +121,10 @@ edoardo-allegrini:
     linkedin:
       icon: "bi bi-linkedin"
       value: "www.linkedin.com/in/edoardoallegrini"
-      show: false
+      show: true
       description: "Linkedin Profile"
     github:
       icon: "bi bi-github"
       value: "https://github.com/EdoardoAllegrini"
-      show: false
+      show: true
       description: "GitHub profile"
