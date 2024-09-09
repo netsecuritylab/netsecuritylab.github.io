@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Network Security Lab ~ Edoardo Allegrini</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+    <body> <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-bottom-border">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">NetSecurityLab</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/people">People</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/students">Students</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <i data-bs-toggle="modal" href="#searchModal" class="search-icon bi bi-search mr-2" type="search"></i>
+        </form>
+      </div>
+      <div class="modal fade" id="searchModal" aria-hidden="true" aria-labelledby="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="search-input-modal" id="search"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>  
+        <main class="container" style="padding-top: 60px;">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="http://localhost:4000/assets/images/edoardo_allegrini_2024.jpg" width="200" height="200" class="publication-author-image" />
+                        <h2 class="mt-2 text-center">Edoardo Allegrini</h2>
+                        <h4 class="mt-0 text-body-secondary">MSc Student in Cybersecurity</h4>
+                        <ul class="list-inline mb-1">
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8 fs-5">
+                    <p>Hi, I’m Edoardo Allegrini. I’m a master’s student in Cybersecurity at <a href="https://www.uniroma1.it">Sapienza University of Rome</a>. These years as a graduate students are enriched by a research scholarship from the Computer Science Department where I am a member of the Network Security Lab.</p>
+
+<p>I am interested in tackling complex problems, particularly at the intersection of cybersecurity and AI. At the moment, I am working on designing, developing, and testing an innovative approach to accurately detect and identify bot activity on social media platforms.</p>
+
+                    <div>
+                        <h4>Interests</h4>
+                        <ul class="fs-6">
+                            
+                            
+                                <li>Social Network Anomaly Detection</li>
+                            
+                                <li> Machine Learning and Security</li>
+                            
+                                <li> Computer and Web Security</li>
+                            
+                                <li> Ethical Hacking</li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main> 
+        <div class="container">
+    <footer class="py-3 my-4">
+      <!--<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>-->
+      <p class="text-center text-body-secondary">&copy; 2024 Network Security Lab. Site based on Jekyll and Bootstrap.</p>
+      <p class="text-center text-body-secondary">Made by Edoardo Di Paolo.</p>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ 
+      element: "#search",
+      showImages: false,
+      processResult: function (result) {
+        if (result.url.includes("_site")) {
+          result.url = result.url.replace('_site/', './')
+        }
+        return result;
+      }
+    });
+  });
+</script> 
+    </body>
+</html>

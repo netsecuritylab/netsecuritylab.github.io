@@ -100,3 +100,31 @@ giovanni-pimpinella:
       value: "https://github.com/aedoardo"
       show: false
       description: "GitHub profile"
+
+edoardo-allegrini:
+  name: "Edoardo Allegrini"
+  role: "MSc Student in Cybersecurity"
+  rank: 1
+  image: "assets/images/edoardo_allegrini_2024.jpg"
+  interests: "Social Network Anomaly Detection, Machine Learning and Security, Computer and Web Security, Ethical Hacking"
+  contacts:
+    email:
+      icon: "bi bi-envelope"
+      value: "mailto:allegrini@di.uniroma1.it"
+      show: false
+      description: "Email"
+    scholar:
+      icon: "bi bi-journal"
+      value: "https://scholar.google.com/citations?user=K-00jlEAAAAJ"
+      show: false
+      description: "Google Scholar"
+    linkedin:
+      icon: "bi bi-linkedin"
+      value: "www.linkedin.com/in/edoardoallegrini"
+      show: false
+      description: "Linkedin Profile"
+    github:
+      icon: "bi bi-github"
+      value: "https://github.com/EdoardoAllegrini"
+      show: false
+      description: "GitHub profile"
