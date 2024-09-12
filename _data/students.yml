@@ -1,26 +1,38 @@
 - name: Luciano Valletta
   thesis: ""
   current: true
+  tags:
+    - IPv6
 
 - name: Andrea Di Paolo
   thesis: ""
   current: true
+  tags:
+    - MQTT
 
 - name: Antonio Cordeiro
   thesis: ""
   current: true
+  tags:
+    - Social Bot Detection
 
 - name: Anastasiia Baranovska
   thesis: ""
   current: true
+  tags:
+    - Web development
 
 - name: Fabio Figara
   thesis: ""
   current: true
+  tags:
+    - Cyber range
 
 - name: Paolo Luciano
   thesis: ""
   current: true
+  tags:
+    - Cyber range
 
 - name: Giovanni Pimpinella
   thesis: ""
@@ -29,26 +41,38 @@
 - name: Federica Bianchi
   thesis: ""
   current: true
+  tags:
+    - Encrypted traffic classification
 
 - name: Nicolò Fragale
   thesis: ""
   current: true
+  tags:
+    - Dataset creation
 
 - name: Riccardo Mancini
   thesis: ""
   current: true
+  tags:
+    - MPTCP
 
 - name: Annafabia Gai
   thesis: ""
   current: true
+  tags:
+    - IDS
 
 - name: Gianluca Monte
   thesis: ""
   current: true
+  tags:
+    - Password Generator
 
 - name: Fabrizio Chiaretti
   thesis: ""
   current: true
+  tags:
+    - IPv6
 
 - name: Matteo Alleva
   thesis: "Realizzazione di una Infrastruttura con Tecnologia Check Point per l'Analisi dei Covert Channel IPv6"

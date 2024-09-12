@@ -203,3 +203,16 @@ body {
   transform: scale(1.2);
   transition: all .3s ease-in-out;
 }
+
+.inline-tags > span {
+  cursor: default;
+}
+
+.inline-tags > span:not(:first-child) {
+  margin-left: 5px;
+}
+
+.inline-tags > span {
+  font-size: 12px;
+  font-weight: normal;
+}
