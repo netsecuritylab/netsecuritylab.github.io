@@ -5,6 +5,10 @@ slug: ds-2024-pub
 short_description: "The paper \"<b>A Proposal for Uncovering Hidden Social Bots via Genetic Similarity</b>\" has been accepted as a poster at <a href=\"http://ds2024.isti.cnr.it/\" target=\"_blank\">Discovery Science 2024</a>!"
 
 date: '2024-10-12'
+carousels:
+  - images: 
+    - image: ../../assets/images/news/poster-ds/poster1.JPG
+    - image: ../../assets/images/news/poster-ds/poster2.JPG
 ---
 
 ##### Brief summary
