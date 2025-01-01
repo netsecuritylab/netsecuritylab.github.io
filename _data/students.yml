@@ -1,9 +1,3 @@
-- name: Luciano Valletta
-  thesis: ""
-  current: true
-  tags:
-    - IPv6
-
 - name: Andrea Di Paolo
   thesis: ""
   current: true
@@ -24,23 +18,23 @@
 
 - name: Fabio Figara
   thesis: ""
-  current: true
+  current: false
   tags:
     - Cyber range
 
 - name: Paolo Luciano
   thesis: ""
-  current: true
+  current: false
   tags:
     - Cyber range
 
 - name: Giovanni Pimpinella
   thesis: ""
-  current: true
+  current: false
 
 - name: Federica Bianchi
   thesis: ""
-  current: true
+  current: false
   tags:
     - Encrypted traffic classification
 
