@@ -11,8 +11,8 @@
     - MQTT
 
 - name: Antonio Cordeiro
-  thesis: ""
-  current: true
+  thesis: "Improving Bot Detection with Language Model Embeddings and Graph Representations"
+  current: false
   tags:
     - Social Bot Detection
 
@@ -45,8 +45,8 @@
     - Encrypted traffic classification
 
 - name: Nicolò Fragale
-  thesis: ""
-  current: true
+  thesis: "From Scraping to Bot Detection: Navigating Mastodon and the Fediverse with APIs"
+  current: false
   tags:
     - Dataset creation
 
@@ -64,7 +64,7 @@
 
 - name: Gianluca Monte
   thesis: ""
-  current: true
+  current: false
   tags:
     - Password Generator
 
