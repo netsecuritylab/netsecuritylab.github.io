@@ -7,9 +7,10 @@ authors:
 - Marinella Petrocchi
 - Angelo Spognardi
 date: '2024-01-01'
-publishDate: '2025-01-01T19:21:49.395758Z'
+publishDate: '2024-01-01T19:21:49.395758Z'
 publication_types:
 - paper_conference
+publication: "DS 2024"
 links:
 - name: URL
   icon: 'bi bi-filetype-pdf'
