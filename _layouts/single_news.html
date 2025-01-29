@@ -11,7 +11,13 @@
             <div class="col-md-6">
                 <div class="publication-options mt-0 mb-2 text-body-secondary">
                     <span class="news-span-date">{{page.date | date: "%-d %B %Y"}}</span>
-                    <span>{{content | reading_time}}</span>
+                    {% assign words = content | number_of_words %}
+                    {% assign reading_time = words | divided_by: 180 | plus: 1 %}
+                    {% if reading_time == 1 %}
+                      <span>{{ reading_time }} min read</span>
+                    {% else %}
+                      <span>{{ reading_time }} mins read</span>
+                    {% endif %}
                 </div>
                 
                 <p>{{page.short_description}}</p>

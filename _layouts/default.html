@@ -11,7 +11,7 @@
         <div class="col-lg-4">
           <div class="p-3 news-section bg-light">
             <h4>Latest news</h4>
-            {% assign news = site.news | sort: 'date' | reverse %}
+            {% assign news = site.news | sort: "date" | reverse %}
             {% for article in news limit:10 %}
             {% assign middle_part = article.path | split: '/'%}
             <div class="article pt-2 pb-2">
@@ -19,7 +19,13 @@
                 <a class="news-link-home mb-0" href="{{site.url}}/news/{{article.slug}}">{{article.title}}</a>
                 <div class="mt-0 news-date-home text-body-secondary">
                   {{article.date | date: "%-d %B %Y"}}
-                  <span>{{article.content | reading_time}}</span>
+                  {% assign words = article.content | number_of_words %}
+                  {% assign reading_time = words | divided_by: 180 | plus: 1 %}
+                  {% if reading_time == 1 %}
+                    <span>{{ reading_time }} min read</span>
+                  {% else %}
+                    <span>{{ reading_time }} mins read</span>
+                  {% endif %}
                 </div>
               </div>
             </div>
