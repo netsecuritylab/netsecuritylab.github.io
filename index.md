@@ -13,3 +13,5 @@ Our research focuses on **anomaly detection in social networks**, using both **A
 The memebers of our group come from a diverse range of backgrounds, including cybersecurity, computer science, and computer engineering. This interdisciplinary approach enriches our research, allowing us to tackle complex problems from multiple perspectives.
 
 At the Network Security Lab, our mission is to push boundaries of knowledge in network security and contribute to the undestaing and development of secure internet.
+
+**TEST UPDATE**
