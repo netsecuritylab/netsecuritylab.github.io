@@ -1,5 +1,5 @@
 - name: Andrea Di Paolo
-  thesis: ""
+  thesis: "Vulnerability assessment of MQTT broker with fuzzing and stress testing"
   current: true
   tags:
     - MQTT
@@ -11,29 +11,32 @@
     - Social Bot Detection
 
 - name: Anastasiia Baranovska
-  thesis: ""
+  thesis: "Implementazione di una piattaforma per la verifica dei piani di studio"
   current: true
   tags:
     - Web development
 
 - name: Fabio Figara
-  thesis: ""
+  thesis: "Estensione di una piattaforma per la valutazione automatica nei
+Cyber Range"
   current: false
   tags:
     - Cyber range
 
 - name: Paolo Luciano
-  thesis: ""
-  current: false
+  thesis: "Implementazione di un valutatore automatico per simulazioni di un Cyber range"
+  current: true
   tags:
     - Cyber range
 
 - name: Giovanni Pimpinella
-  thesis: ""
+  thesis: "Towards Perfect Labeling of Mobile Encrypted Traffic"
   current: false
+  tags:
+    - Encrypted traffic classification
 
 - name: Federica Bianchi
-  thesis: ""
+  thesis: "A Novel Multi-Perspective Approach to Encrypted Network Traffic Analysis"
   current: false
   tags:
     - Encrypted traffic classification
@@ -45,26 +48,26 @@
     - Dataset creation
 
 - name: Riccardo Mancini
-  thesis: ""
-  current: true
+  thesis: "Vulnerability Assessment of Multipath TCP: a novel testing environment"
+  current: false
   tags:
     - MPTCP
 
 - name: Annafabia Gai
-  thesis: ""
-  current: true
+  thesis: "Image-based NIDS: from CNN models to Conditional-GAN"
+  current: false
   tags:
     - IDS
 
 - name: Gianluca Monte
-  thesis: ""
+  thesis: "A novel model for high-quality password generation"
   current: false
   tags:
     - Password Generator
 
 - name: Fabrizio Chiaretti
-  thesis: ""
-  current: true
+  thesis: "Uncovering IPv6 Vulnerabilities in Fragmentation and Header Chain Handling: Development of Fragmentron6 as a Comprehensive Detection Tool"
+  current: false
   tags:
     - IPv6
 
@@ -75,47 +78,63 @@
 - name: Leonardo Scappatura
   thesis: "Deep Learning Model for Encrypted Network Traffic Analysis"
   current: false
+  tags:
+    - Encrypted traffic classification
 
 - name: Davide Di Campi
-  thesis: ""
+  thesis: "Gamified Learning: an educational infrastructure for Cybersecurity"
   current: false
+  tags:
+    - Cyber range
 
 - name: Daniele Ferracci
-  thesis: ""
+  thesis: "Analisi della robustezza dei sistemi kernel anti-cheat"
   current: false
 
 - name: Radek Di Luca
-  thesis: ""
+  thesis: "MQTT over TLS Security assessment"
   current: false
+  tags:
+    - MQTT
 
 - name: Vincenzo Casanova
-  thesis: ""
+  thesis: "From SIEM to XDR: a study of their complementary and competitive roles in the cybersecurity landscape"
   current: false
 
 - name: Andrea Ercolino
   thesis: "Implementing and Evaluating IPv6 Covert Channels"
   current: false
+  tags:
+    - IPv6
 
 - name: Alessandro Formiconi
   thesis: "Security vulnerabilities and non-compliance study on MQTT brokers and clients implementations"
   current: false
+  tags:
+    - MQTT
 
 - name: Paolo Gigliesi
-  thesis: ""
+  thesis: "Comprehensive analysis and defense strategies against DDoS attacks: Traditional and Machine Learning methods"
   current: false
 
 - name: Francesco Inglese
-  thesis: ""
+  thesis: "Creation of an Intrusion Detection System using Machine Learning algorithms"
   current: false
+  tags:
+    - IDS
 
 - name: Leonardo Persiani
   thesis: "Design and implementation of a monitoring tool for cyber-range exercises"
   current: false
+  tags:
+    - Cyber range
 
 - name: Mario Cavaiola
-  thesis: ""
+  thesis: "Past, present and future of IPv6 Extension Header security challenges"
   current: false
+  tags:
+    - IPv6
 
 - name: Giuseppe Rinaldi
-  thesis: ""
+  thesis: "Implementation of an IAM Project: Analysis of Project Management, Design and Development"
   current: false
