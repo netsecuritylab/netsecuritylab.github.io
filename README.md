@@ -40,5 +40,5 @@ abstract: Paper abstract.
 ---
 ```
 
-The publication_types are: "paper_conference", "paper_journal" and "paper_preprint".
+The publication_types options are: "paper_conference", "paper_journal" and "paper_preprint".
 
