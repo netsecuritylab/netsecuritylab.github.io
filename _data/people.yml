@@ -1,7 +1,7 @@
 angelo-spognardi:
   name: "Angelo Spognardi"
   role: "Associate Professor"
-  rank: 3
+  rank: 4
   image: "assets/images/angelo_spognardi_2024.jpeg"
   interests: "Network Anomaly Detection, Social Network Anomaly Detection, IoT and WSN Security"
   contacts:
@@ -20,7 +20,7 @@ angelo-spognardi:
 edoardo-di-paolo:
   name: "Edoardo Di Paolo"
   role: "PhD Student"
-  rank: 2
+  rank: 3
   image: "assets/images/edoardo_di_paolo_2024.jpg"
   interests: "Social Network Anomaly Detection, Network Security"
   contacts:
@@ -48,7 +48,7 @@ edoardo-di-paolo:
 federica-bianchi:
   name: "Federica Bianchi"
   role: "PhD Student"
-  rank: 2
+  rank: 3
   image: "assets/images/federica_bianchi_2024.jpg"
   interests: "Network Traffic Analysis, Evasive Malware Analysis"
   contacts:
@@ -76,7 +76,7 @@ federica-bianchi:
 giovanni-pimpinella:
   name: "Giovanni Pimpinella"
   role: "PhD Student"
-  rank: 2
+  rank: 3
   image: "assets/images/default_avatar_male.svg"
   interests: "Network Traffic Analysis, Evasive Malware Analysis"
   contacts:
