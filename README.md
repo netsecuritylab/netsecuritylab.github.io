@@ -8,7 +8,7 @@
 
 
 # How to add a publication
-
+First of all install this python (IIRC it needs python > 3.10) library: https://github.com/GetRD/academic-file-converter
 Add the publication to the `netseclab.bib file.`
 Then run the command:
 
