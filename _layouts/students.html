@@ -31,6 +31,11 @@
               <li class="d-flex flex-column student-item">
                   <div class="fw-bold">{{student.name}}</div>
                   <div class="text-body-secondary fst-italic">Thesis: "{{student.thesis}}"</div>
+                  <div class="d-flex mb-1 inline-tags">
+                    {% for tag in student.tags %}
+                    <span title="{{tag}}" data-tag="{{tag}}" class="badge rounded-pill text-bg-secondary">{{tag}}</span>
+                    {% endfor %}
+                  </div>
               </li>
               {% endif %}
             {% endfor %}
