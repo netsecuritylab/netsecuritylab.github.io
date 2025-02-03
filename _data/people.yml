@@ -15,7 +15,29 @@ angelo-spognardi:
       value: "https://scholar.google.com/citations?user=ULcRFLoAAAAJ"
       show: true
       description: "Google Scholar"
-    
+
+enrico-bassetti:
+  name: "Enrico Bassetti"
+  role: "External Collaborators"
+  rank: 2
+  image: "assets/images/enrico-bassetti.png"
+  interests: "Network security, traffic fingerprinting, DDoS, 5G/6G NTN" 
+  contacts:
+    scholar:
+      icon: "bi bi-journal"
+      value: "https://scholar.google.it/citations?user=MHg3GioAAAAJ"
+      show: true
+      description: "Google Scholar"
+    linkedin:
+      icon: "bi bi-linkedin"
+      value: "https://www.linkedin.com/in/enricobassetti/"
+      show: true
+      description: "Linkedin Profile"
+    github:
+      icon: "bi bi-github"
+      value: "https://github.com/Enrico204"
+      show: true
+      description: "GitHub profile"
 
 edoardo-di-paolo:
   name: "Edoardo Di Paolo"
