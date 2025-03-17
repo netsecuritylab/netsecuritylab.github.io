@@ -216,3 +216,34 @@ body {
   font-size: 12px;
   font-weight: normal;
 }
+
+.spoiler {
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  font-size: 2.5rem !important;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.spoiler:hover {
+  opacity: .8;
+  transition: all .3s ease-in-out;
+}
+
+.difficultydot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #75b798; 
+  border: 1px solid #0f5132;
+  margin-left: 3px;
+}
+
+.difficultydot.active {
+  background-color: #0f5132;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  {% include head.html %}
+  <body> {% include header.html %} <main class="container" style="padding-top: 60px;">
+      <div class="row">
+        <div class="col-lg-8">
+          <!--<h2>Available Theses</h2>-->
+          <ol class="p-0 m-0">
+            {% assign theses = site.data.theses %}
+            {% for thesis in theses %}
+            {% if thesis.available %}
+            <li class="d-flex pb-2 pt-2 flex-column student-item">
+                <div class="d-flex justify-content-between flex-row align-items-center">
+                    <h2>{{ thesis.title }}</h2>
+                    <h2 data-bs-toggle="collapse" href="#collapseThesis{{ forloop.index }}" role="button" aria-expanded="false" aria-controls="collapseThesis{{ forloop.index }}" class="spoiler toggle-icon" data-target="collapseThesis{{ forloop.index }}">+</h2>
+                </div>
+                <div class="collapse multi-collapse" id="collapseThesis{{ forloop.index }}">
+                    <div class="card card-body">
+                        <div class="d-flex flex-start align-items-center">
+                            <b>Difficulty:</b>
+                            <div title="{{ thesis.difficulty }}/5" class="d-flex align-items-center ml-2">
+                                {% for i in (1..5) %}
+                                    {% if i <= thesis.difficulty %}
+                                        <div class="difficultydot active"></div>
+                                    {% else %}
+                                        <div class="difficultydot"></div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <p><b>Abstract:</b> {{ thesis.abstract }}</p>
+                        <div class="d-flex mb-0 mt-1 inline-tags">
+                            {% for tag in thesis.tags %}
+                                <span title="{{ tag }}" data-tag="{{ tag }}" class="badge rounded-pill text-bg-secondary">{{ tag }}</span>
+                            {% endfor %}
+                    </div>
+                    </div>
+                </div>
+            </li>
+            {% endif %}
+            {% endfor %}
+            </ol>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".toggle-icon").forEach(function (toggle) {
+                toggle.addEventListener("click", function () {
+                    // Cambia immediatamente il simbolo
+                    this.textContent = this.textContent === "+" ? "-" : "+";
+                });
+            });
+        });
+        </script>        
+    </main> {% include footer.html %} </body>
+</html>

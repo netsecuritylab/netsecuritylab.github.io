@@ -1,0 +1,14 @@
+- title: Thesis Title Example
+  abstract: "This is the thesis's abstract."
+  available: true
+  difficulty: 1
+  tags:
+    - MQTT
+
+
+- title: Thesis Title Example 2
+  abstract: "This is the thesis's 2 abstract."
+  available: true
+  difficulty: 5
+  tags:
+    - IPv6
