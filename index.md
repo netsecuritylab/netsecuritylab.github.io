@@ -5,6 +5,7 @@ title: "Network Security Lab"
 
 <h2>Welcome to the NetSecurity Lab</h2>
 
+<img src="/assets/images/netseclablogo.svg" width="350" height="300" style="margin-left: auto; margin-right: auto; display: block;">
 
 The **Network Security Lab** is a research group at the **Department of Computer Science** at Sapienza University of Rome. Under the supervision of **Professor Angelo Spognardi**, our lab investigates a wide range of topics at the intersection of cybersecurity, anomaly detection, and artificial intelligence.
 

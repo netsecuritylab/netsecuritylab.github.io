@@ -3550,3 +3550,5 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 .difficultydot { width: 15px; height: 15px; border-radius: 50%; background-color: #75b798; border: 1px solid #0f5132; margin-left: 3px; }
 
 .difficultydot.active { background-color: #0f5132; }
+
+.logo { max-width: 60px; max-height: 50px; }
