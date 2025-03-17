@@ -12,7 +12,7 @@
 </head>
   <body> <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-bottom-border">
     <div class="container-fluid">
-      <img src="assets/images/netseclablogo_header.svg" class="logo" />
+      <img src="http://localhost:4000/assets/images/netseclablogo_header.svg" class="logo" />
       <!--<a class="navbar-brand" href="/">NetSecurityLab</a>-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -64,60 +64,25 @@
             
             
             <li class="d-flex pb-2 pt-2 flex-column student-item">
-                <div class="d-flex justify-content-between flex-row align-items-center">
-                    <h2>Thesis Title Example</h2>
-                    <h2 data-bs-toggle="collapse" href="#collapseThesis1" role="button" aria-expanded="false" aria-controls="collapseThesis1" class="spoiler toggle-icon" data-target="collapseThesis1">+</h2>
+                <div data-bs-toggle="collapse" href="#collapseThesis1" role="button" aria-expanded="false" aria-controls="collapseThesis1" class="d-flex justify-content-between flex-row align-items-center spoiler" data-target="collapseThesis1">
+                    <h2>Adapting Bot Detection Models from Twitter to Bluesky: Towards a Cross-Platform Detection Approach</h2>
+                    <h2 class="toggle-icon">+</h2>
                 </div>
                 <div class="collapse multi-collapse" id="collapseThesis1">
                     <div class="card card-body">
                         <div class="d-flex flex-start align-items-center">
-                            <b>Difficulty:</b>
-                            <div title="1/5" class="d-flex align-items-center ml-2">
+                            <b>Level:</b>
+                            <div class="d-flex align-items-center ml-2">
                                 
-                                    
-                                        <div class="difficultydot active"></div>
-                                    
+                                    <span style="margin-left:3px;" class="badge rounded-pill text-bg-primary">Bachelor</span>
                                 
-                                    
-                                        <div class="difficultydot"></div>
-                                    
-                                
-                                    
-                                        <div class="difficultydot"></div>
-                                    
-                                
-                                    
-                                        <div class="difficultydot"></div>
-                                    
-                                
-                                    
-                                        <div class="difficultydot"></div>
-                                    
+                                    <span style="margin-left:3px;" class="badge rounded-pill text-bg-primary">Master</span>
                                 
                             </div>
                         </div>
-                        <p><b>Abstract:</b> This is the thesis's abstract.</p>
-                        <div class="d-flex mb-0 mt-1 inline-tags">
-                            
-                                <span title="MQTT" data-tag="MQTT" class="badge rounded-pill text-bg-secondary">MQTT</span>
-                            
-                    </div>
-                    </div>
-                </div>
-            </li>
-            
-            
-            
-            <li class="d-flex pb-2 pt-2 flex-column student-item">
-                <div class="d-flex justify-content-between flex-row align-items-center">
-                    <h2>Thesis Title Example 2</h2>
-                    <h2 data-bs-toggle="collapse" href="#collapseThesis2" role="button" aria-expanded="false" aria-controls="collapseThesis2" class="spoiler toggle-icon" data-target="collapseThesis2">+</h2>
-                </div>
-                <div class="collapse multi-collapse" id="collapseThesis2">
-                    <div class="card card-body">
                         <div class="d-flex flex-start align-items-center">
                             <b>Difficulty:</b>
-                            <div title="5/5" class="d-flex align-items-center ml-2">
+                            <div title="4/5" class="d-flex align-items-center ml-2">
                                 
                                     
                                         <div class="difficultydot active"></div>
@@ -136,15 +101,19 @@
                                     
                                 
                                     
-                                        <div class="difficultydot active"></div>
+                                        <div class="difficultydot"></div>
                                     
                                 
                             </div>
                         </div>
-                        <p><b>Abstract:</b> This is the thesis's 2 abstract.</p>
+                        <div class="thesisAbstract"><b>Abstract:</b> The increasing presence of automated accounts (bots) on social media platforms raises concerns about misinformation, manipulation, and platform integrity. While several bot detection models have been developed for Twitter, their applicability to emerging platforms like Bluesky remains unexplored. This thesis aims to adapt and evaluate Twitter-based bot detection approaches for Bluesky, moving towards a cross-platform detection framework. Given the lack of labeled datasets for Bluesky, the first step will involve designing a strategy to collect and verify human and bot accounts with high confidence. The second step will focus on adapting existing bot detection models and assessing their performance on Bluesky. The study will provide insights into the transferability of detection methods across different social media ecosystems and contribute to the broader challenge of cross-platform bot detection.</div>
                         <div class="d-flex mb-0 mt-1 inline-tags">
                             
-                                <span title="IPv6" data-tag="IPv6" class="badge rounded-pill text-bg-secondary">IPv6</span>
+                                <span title="Social Bot Detection" data-tag="Social Bot Detection" class="badge rounded-pill text-bg-secondary">Social Bot Detection</span>
+                            
+                                <span title="Twitter" data-tag="Twitter" class="badge rounded-pill text-bg-secondary">Twitter</span>
+                            
+                                <span title="Bluesky" data-tag="Bluesky" class="badge rounded-pill text-bg-secondary">Bluesky</span>
                             
                     </div>
                     </div>
@@ -158,10 +127,10 @@
       </div>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll(".toggle-icon").forEach(function (toggle) {
+            document.querySelectorAll(".spoiler").forEach(function (toggle) {
                 toggle.addEventListener("click", function () {
-                    // Cambia immediatamente il simbolo
-                    this.textContent = this.textContent === "+" ? "-" : "+";
+                    let symbol = this.querySelector(".toggle-icon");
+                    symbol.textContent = symbol.textContent === "+" ? "-" : "+";
                 });
             });
         });

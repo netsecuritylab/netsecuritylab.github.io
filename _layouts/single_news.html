@@ -22,7 +22,9 @@
                 
                 <p>{{page.short_description}}</p>
                 {{content}}
+                {% if page.carousels %}
                 {% include carousel.html height="100" unit="%" duration="10" number="1" %}
+                {% endif %}
             </div>
         </div>
       </div>

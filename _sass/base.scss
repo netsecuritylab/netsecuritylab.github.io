@@ -252,3 +252,9 @@ body {
   max-width: 60px;
   max-height: 50px;
 }
+
+.thesisAbstract { 
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}

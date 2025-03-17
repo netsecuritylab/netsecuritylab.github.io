@@ -3552,3 +3552,5 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 .difficultydot.active { background-color: #0f5132; }
 
 .logo { max-width: 60px; max-height: 50px; }
+
+.thesisAbstract { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
