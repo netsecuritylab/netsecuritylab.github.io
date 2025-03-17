@@ -9,6 +9,6 @@ date: '2025-03-17'
 
 ##### Brief summary
 
-In this paper, we propose a novel method based on the Digital DNA to address the growing challenge of social bots on social media platforms.
+We are happy to announce that our paper, "Deciphering Social Behaviour: a Novel Biological Approach for Social Users Classification", has been accepted at the 40th ACM/SIGAPP Symposium on Applied Computing (SAC 2025). In this research, we offer a novel viewpoint on how to classify social media users by drawing insights from biology. By leveraging techniques that measure sequence similarity, which are typically applied in DNA research, we show methods for examining behavioral trends and identifying social bots with enhanced explicability.
 
-Stay tuned for more updates as this research progresses!
+This cross-disciplinary strategy connects biology with social media analysis, opening new directions for fresh insights to study online interactions. We look forward to engaging discussions at SAC 2025!
