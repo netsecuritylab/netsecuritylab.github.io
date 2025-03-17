@@ -1,7 +1,7 @@
 - title: "Adapting Bot Detection Models from Twitter to Bluesky: Towards a Cross-Platform Detection Approach"
   abstract: "The increasing presence of automated accounts (bots) on social media platforms raises concerns about misinformation, manipulation, and platform integrity. While several bot detection models have been developed for Twitter, their applicability to emerging platforms like Bluesky remains unexplored. This thesis aims to adapt and evaluate Twitter-based bot detection approaches for Bluesky, moving towards a cross-platform detection framework. Given the lack of labeled datasets for Bluesky, the first step will involve designing a strategy to collect and verify human and bot accounts with high confidence. The second step will focus on adapting existing bot detection models and assessing their performance on Bluesky. The study will provide insights into the transferability of detection methods across different social media ecosystems and contribute to the broader challenge of cross-platform bot detection."
   available: true
-  difficulty: 4
+  difficulty: 3
   tags:
     - Social Bot Detection
     - Twitter

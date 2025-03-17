@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   {% include head.html %}
+  <script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
   <body> {% include header.html %} <main class="container" style="padding-top: 60px;">
       <div class="row">
         <div class="col-lg-8">
@@ -25,7 +31,7 @@
                             </div>
                         </div>
                         <div class="d-flex flex-start align-items-center">
-                            <b>Difficulty:</b>
+                            <b>Difficulty <i data-toggle="tooltip" data-placement="top" title="This indicator is for informational purposes only and may not be entirely accurate." class="bi bi-info-circle"></i>:</b>
                             <div title="{{ thesis.difficulty }}/5" class="d-flex align-items-center ml-2">
                                 {% for i in (1..5) %}
                                     {% if i <= thesis.difficulty %}
