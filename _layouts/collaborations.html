@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  {% include head.html %}
+  <script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+  <body> {% include header.html %} <main class="container" style="padding-top: 60px;">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2>Collaborations</h2>
+          <ol class="p-0 m-0">
+            {% assign collaborations = site.data.collaborations %}
+            {% for collaboration in collaborations %}
+            <li class="d-flex pb-2 pt-2 flex-column student-item">
+                <div class="d-flex justify-content-between flex-row align-items-center">
+                    <div class="d-flex flex-row align-items-center">
+                        <img src="{{ collaboration.image }}" style="max-width: 100px; max-height: 100px; margin-right: 10px;"/>
+                        <div class="d-flex flex-column pl-2">
+                            <h2 class="ml-2"><a target="_blank" href="{{ collaboration.ref }}">{{ collaboration.title }}</a></h2>
+                            <span class="ml-2 thesisAbstract">{{ collaboration.university }}</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+            </ol>
+          </div>
+        </div>
+      </div>      
+    </main> {% include footer.html %} </body>
+</html>
