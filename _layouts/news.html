@@ -6,7 +6,7 @@
     <main class="container" style="padding-top: 60px;">
       <div class="d-flex justify-content-center row">
         <h1 class="text-center">Latest News</h1>
-        <div class="col-md-8 ms-5">
+        <div class="col-md-8">
             {% assign news = site.news | sort: 'date' | reverse %}
             {% for article in news %}
             
