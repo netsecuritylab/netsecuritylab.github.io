@@ -10,7 +10,10 @@
   <body> {% include header.html %} <main class="container" style="padding-top: 60px;">
       <div class="row">
         <div class="col-lg-8">
-          <!--<h2>Available Theses</h2>-->
+          <h2>Available Theses</h2>
+          <p class="thesisAbstract">
+            Students' proposed topics about network security or cybersecurity are welcome.
+          </p>
           <ol class="p-0 m-0">
             {% assign theses = site.data.theses %}
             {% for thesis in theses %}
