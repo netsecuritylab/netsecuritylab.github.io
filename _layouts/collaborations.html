@@ -17,8 +17,10 @@
             <li class="d-flex pb-2 pt-2 flex-column student-item">
                 <div class="d-flex justify-content-between flex-row align-items-center">
                     <div class="d-flex flex-row align-items-center">
-                        <img src="{{ collaboration.image }}" style="max-width: 100px; max-height: 100px; margin-right: 10px;"/>
-                        <div class="d-flex flex-column pl-2">
+                        <div style="min-width: 100px; max-width: 100px;">
+                            <img src="{{ collaboration.image }}" style="max-width: 100px; max-height: 100px;"/>
+                        </div>
+                        <div class="d-flex flex-column" style="margin-left: 10px;">
                             <h2 class="ml-2"><a target="_blank" href="{{ collaboration.ref }}">{{ collaboration.title }}</a></h2>
                             <span class="ml-2 thesisAbstract">{{ collaboration.university }}</span>
                         </div>
