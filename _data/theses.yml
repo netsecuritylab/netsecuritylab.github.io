@@ -9,3 +9,27 @@
   levels:
     - Bachelor
     - Master
+
+- title: "Decoding Social Bots Through Enhanced Encoding: Because Sometimes You Have to Encrypt the Truth to Unveil the Lies!"
+  abstract: "In the context of social bot detection, a DNA sequence represents a user’s online behavior as a structured string of symbols, analogous to DNA encodes genetic information. Each symbol in this sequence is derived from a predefined alphabet, where specific user actions—such as tweeting, retweeting, or replying—are mapped to distinct characters. This biologically inspired method offers a systematic way to analyze and compare social media activity. Traditional bot detection methods often rely on a limited alphabet, which may fail to fully capture the complexities of bot behavior. To address this limitation, this thesis aims to design and investigate a more robust multi-alphabet DNA encoding approach that integrates various representations of user activity. For example, the B3 encoding distinguishes between fundamental user interactions—tweets, retweets, and replies. Expanding on this, the B5 alphabet introduces further distinctions by incorporating tweets that include URLs and hashtags. In addition to structural aspects, a time-based alphabet is proposed to capture posting patterns, identifying actions that range from sporadic activity to more regular and planned participation. To deepen this understanding, a content-based alphabet could classify posts according to thematic categories, such as politics, economy, entertainment, or misinformation. This enhanced encoding system will provide valuable insights into the underlying intentions behind bot activity. By applying clustering and classification techniques to this multi-layered representation, the thesis seeks to offer a more detailed representation and consequent understanding of how different types of bots operate and evolve."
+  available: true
+  difficulty: 3
+  tags:
+    - Social Bot Detection
+    - Twitter
+    - DNA
+  levels:
+    - Bachelor
+    - Master
+
+- title: "Unmasking the Invisible: Detecting and Mitigating Covert Channels in IPv6 Networks"
+  abstract: "With the rapid adoption of IPv6, new security challenges have emerged, one of which is the detection and mitigation of covert channels. These channels enable adversaries to bypass security mechanisms, exfiltrate sensitive data, or establish stealthy communication paths. This thesis focuses on developing and testing detection measures against covert channels in IPv6 traffic, proposing solutions to counter existing tools designed to implement such channels. The research employs a combination of statistical analysis and anomaly detection techniques. By evaluating real-world IPv6 traffic and conducting controlled experiments, this study aims to demonstrate the effectiveness of the proposed approach in identifying various covert communication methods, including those utilizing the traffic-class header, flow labels, and other IPv6 features. The findings will contribute to enhancing network security by providing a robust approach to detecting and mitigating covert channels in IPv6 networks."
+  available: true
+  difficulty: 3
+  tags:
+    - IPv6
+    - Covert Channels
+    - Defense
+  levels:
+    - Bachelor
+    - Master
