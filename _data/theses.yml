@@ -33,3 +33,13 @@
   levels:
     - Bachelor
     - Master
+
+- title: "Efficient Analysis of IPv6 Fragmentation and Overlapping Fragments in Operating Systems"
+  abstract: "IPv6 fragmentation handling varies across operating systems, affecting packet reassembly and security. In this thesis, you develop a mathematical model to test IPv6 fragmentation without generating all possible permutations. The model analyzes how systems handle overlapping fragments, identifying anomalies and inconsistencies. This approach improves efficiency in assessing OS compliance with IPv6 standards, reducing computational costs and detecting potential vulnerabilities."
+  available: true
+  difficulty: 4
+  tags:
+    - IPv6
+  levels:
+    - Bachelor
+    - Master
