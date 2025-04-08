@@ -20,8 +20,8 @@
             {% if thesis.available %}
             <li class="d-flex pb-2 pt-2 flex-column student-item">
                 <div data-bs-toggle="collapse" href="#collapseThesis{{ forloop.index }}" role="button" aria-expanded="false" aria-controls="collapseThesis{{ forloop.index }}" class="d-flex justify-content-between flex-row align-items-center spoiler" data-target="collapseThesis{{ forloop.index }}">
-                    <h2>{{ thesis.title }}</h2>
-                    <h2 class="toggle-icon">+</h2>
+                    <h5>{{ thesis.title }}</h5>
+                    <h5 class="toggle-icon">+</h5>
                 </div>
                 <div class="collapse multi-collapse" id="collapseThesis{{ forloop.index }}">
                     <div class="card card-body">

@@ -43,3 +43,13 @@
   levels:
     - Bachelor
     - Master
+
+- title: "Mining Careers for the Future: A Data Analytics Platform for Student and Graduate Trajectories"
+  abstract: "This thesis proposal aims to explore the extraction and statistical analysis of data from almalaurea.it, a platform containing various metrics related to student academical and post-graduation careers. The primary goal of this thesis is (i) to develop a methodology for extracting data from the site, (ii) to generate statistics from the data obtained and (iii) to build a web application to interact with the data."
+  available: true
+  difficulty: 2
+  tags:
+    - Data Science
+    - Web App
+  levels:
+    - Bachelor
