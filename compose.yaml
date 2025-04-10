@@ -1,0 +1,12 @@
+services:
+  jekyll:
+    image: jekyll/jekyll
+    command: sh -c "bundle check || bundle install && bundle exec jekyll serve --watch --force_polling --drafts --host 0.0.0.0"
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/srv/jekyll
+      - jekyll_gems:/usr/gem
+   
+volumes:
+  jekyll_gems:

@@ -1,6 +1,8 @@
 # Run locally
 
-`jekyll serve`
+`docker compose up` to start the container. Site will be available at `localhost:4000`.
+
+`docker compose down [-v]` to destroy the container (`-v` to also destroy the dedicated volume).
 
 # Build pagefind
 
