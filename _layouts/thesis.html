@@ -9,8 +9,8 @@
   </script>
   <body> {% include header.html %} <main class="container" style="padding-top: 60px;">
       <div class="row">
-        <div class="col-lg-8">
-          <h2>Available Theses</h2>
+        <div class="col-lg-8 order-lg-1 order-2">
+          <h2 class="fw-bold title-main-color">Thesis</h2>
           <p class="thesisAbstract">
             Students' proposed topics about network security or cybersecurity are welcome.
           </p>
@@ -58,8 +58,23 @@
             {% endfor %}
             </ol>
           </div>
+          <div class="col-lg-4 order-lg-2 order-1 mb-3 mb-lg-0">
+            <div class="p-3 news-section bg-light">
+                <h4><span><img src="{{ 'assets/images/warning.svg' | asset_path }}" width="22px" height="22px" style="margin-bottom: 4px;" alt="Warning Icon"/></span> Requirements</h4>
+                <div class="article pt-2 pb-2">
+                  <div>
+                    Given the previous experiences and required knowledge to complete the proposed thesis topics, 
+                    we expect students requesting a bachelor thesis to have at least <span class="fw-bold">141 CFU</span>
+                    while <span class="fw-bold">72 CFU</span> for master thesis.
+
+                    When contacting us for a thesis request, please remember to attach your CV with all the exams you passed.
+
+                  </div>
+                </div>
+              </div>
+          </div> 
         </div>
-      </div>
+    </div>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll(".spoiler").forEach(function (toggle) {
