@@ -1,4 +1,7 @@
 ---
+layout: single_publication
+title: Detection of LLM-powered bots using image classification
+slug: di-2025-detection
 title: Detection of LLM-powered bots using image classification
 authors:
 - Edoardo Di Paolo
