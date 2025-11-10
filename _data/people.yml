@@ -76,7 +76,7 @@ federica-bianchi:
   contacts:
     email:
       icon: "bi bi-envelope"
-      value: "mailto:bianchi.1891952@studenti.uniroma1.it"
+      value: "mailto:bianchi@di.uniroma1.it"
       show: true
       description: "Email"
     scholar:
@@ -104,7 +104,7 @@ giovanni-pimpinella:
   contacts:
     email:
       icon: "bi bi-envelope"
-      value: "mailto:bianchi.1891952@studenti.uniroma1.it"
+      value: "mailto:pimpinella@di.uniroma1.it"
       show: false
       description: "Email"
     scholar:
@@ -125,10 +125,10 @@ giovanni-pimpinella:
 
 edoardo-allegrini:
   name: "Edoardo Allegrini"
-  role: "MSc Student in Cybersecurity"
-  rank: 1
+  role: "PhD Student"
+  rank: 3
   image: "assets/images/edoardo_allegrini.png"
-  interests: "Social Network Anomaly Detection, Machine Learning and Security, Computer and Web Security, Ethical Hacking"
+  interests: "Reverse Engineering, Security for Agentic AI, Social Bots & LLMs"
   contacts:
     email:
       icon: "bi bi-envelope"
@@ -137,8 +137,8 @@ edoardo-allegrini:
       description: "Email"
     scholar:
       icon: "bi bi-journal"
-      value: "https://scholar.google.com/citations?user=K-00jlEAAAAJ"
-      show: false
+      value: "https://scholar.google.com/citations?user=UdVG054AAAAJ"
+      show: true
       description: "Google Scholar"
     linkedin:
       icon: "bi bi-linkedin"
@@ -150,3 +150,36 @@ edoardo-allegrini:
       value: "https://github.com/EdoardoAllegrini"
       show: true
       description: "GitHub profile"
+    website:
+      icon: "bi bi-globe"
+      value: "https://edoardoallegrini.github.io"
+      show: true
+      description: "Personal Website"
+
+roza-misirli:
+  name: "Roza Misirli"
+  role: "PhD Student"
+  rank: 3
+  image: "assets/images/default_avatar_female.png"
+  interests: ""
+  contacts:
+      email:
+        icon: "bi bi-envelope"
+        value: "mailto:roza.misirli@uniroma1.it"
+        show: true
+        description: "Email"
+      scholar:
+        icon: "bi bi-journal"
+        value: ""
+        show: false
+        description: "Google Scholar"
+      linkedin:
+        icon: "bi bi-linkedin"
+        value: ""
+        show: false
+        description: "Linkedin Profile"
+      github:
+        icon: "bi bi-github"
+        value: ""
+        show: false
+        description: "GitHub profile"
