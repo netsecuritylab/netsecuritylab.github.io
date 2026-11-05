@@ -16,3 +16,4 @@ collections:
   authors:
     output: true
     permalink: "/:collection/:slug"
+exclude: [vendor]

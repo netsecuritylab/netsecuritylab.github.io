@@ -30,7 +30,7 @@ links:
 - name: URL
   value: "PDF"
   icon: 'bi bi-filetype-pdf'
-  url: https://doi.org/10.1109/WoWMoM69805.2026.00039
+  url: 'https://doi.org/10.1109/WoWMoM69805.2026.00039'
 - name: GitHub
   icon: 'bi bi-github'
   value: 'Code'
