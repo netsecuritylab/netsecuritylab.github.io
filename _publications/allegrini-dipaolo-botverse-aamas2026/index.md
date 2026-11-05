@@ -22,14 +22,14 @@ A video demonstration of the framework is available at https://youtu.be/eZSzO5Ja
 summary: ''
 tags: []
 featured: false
-url_pdf: 'https://iris.uniroma1.it/retrieve/d8694e6c-bb21-4a65-992f-b711555b3c1b/Allegrini_BotVerse_2026.pdf'
+url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''
 url_source: ''
-url_video: 'https://github.com/netsecuritylab/EtherMark''
+url_video: ''
 links:
 - name: URL
   value: "PDF"

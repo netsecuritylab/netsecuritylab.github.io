@@ -24,7 +24,7 @@ These results suggest that, in addition to narrative persuasion, structural fati
 summary: ''
 tags: []
 featured: false
-url_pdf: 'https://openreview.net/pdf?id=PZpZQOUnd7'
+url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''
