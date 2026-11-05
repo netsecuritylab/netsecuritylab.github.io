@@ -39,8 +39,4 @@ links:
   icon: 'bi bi-github'
   value: 'Code'
   url: 'https://github.com/netsecuritylab/BotVerse'
-- name: YouTube
-  icon: 'bi bi-youtube'
-  value: 'Video'
-  url: 'https://youtu.be/eZSzO5Jarq'
 ---
