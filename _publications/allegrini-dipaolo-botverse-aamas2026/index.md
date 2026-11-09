@@ -18,7 +18,7 @@ abstract: 'BotVerse is a scalable, event-driven framework for high-fidelity soci
 The system features an asynchronous orchestration API and a simulation engine that emulates human-like temporal patterns and cognitive memory.
 Through the Synthetic Social Observatory, researchers can deploy customizable personas and observe multimodal interactions at scale.
 We demonstrate BotVerse via a coordinated disinformation scenario, providing a safe, experimental framework for red-teaming and computational social scientists.
-A video demonstration of the framework is available at https://youtu.be/eZSzO5Jarq'
+A video demonstration of the framework is available at https://youtu.be/eZSzO5Jarqk'
 summary: ''
 tags: []
 featured: false
@@ -39,8 +39,8 @@ links:
   icon: 'bi bi-github'
   value: 'Code'
   url: 'https://github.com/netsecuritylab/BotVerse'
--- name: YouTube
+- name: YouTube
   icon: 'bi bi-youtube'
   value: 'Video'
-  url: 'https://youtu.be/eZSzO5Jarq'
+  url: 'https://youtu.be/eZSzO5Jarqk'
 ---
